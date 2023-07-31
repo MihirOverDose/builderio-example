@@ -85,9 +85,9 @@ export default function Page({ page, locale }: any) {
       <Head>
         <title>{page?.data.title}</title>
       </Head>
-      <nav>
+      {/* <nav>
         <LanguageSwitch />
-      </nav>
+      </nav> */}
       {/* Render the Builder page */}
       <BuilderComponent model="page" data={{ locale: locale }} content={page} />
     </>
