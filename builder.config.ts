@@ -38,3 +38,27 @@ Builder.registerComponent(
     ],
   }
 );
+
+Builder.registerComponent(
+  dynamic(() => import("./components/builder/ImageViewer")),
+  {
+    name: "ImageViewer",
+    image: "https://tabler-icons.io/static/tabler-icons/icons-png/id-badge.png",
+    inputs: [
+      {
+        name: "img1",
+        defaultValue:
+          "https://cdn.builder.io/api/v1/image/assets%2Fccda6c7abf4c4b8195aa67d47de420dd%2F784e7fa828bd440391e222589df3968c",
+        type: "file",
+        allowedFileTypes: ["png", "jpg", "webp", "svg1"],
+      },
+      {
+        name: "img2",
+        defaultValue:
+          "https://cdn.builder.io/api/v1/image/assets%2Fccda6c7abf4c4b8195aa67d47de420dd%2F784e7fa828bd440391e222589df3968c",
+        type: "file",
+        allowedFileTypes: ["png", "jpg", "webp", "svg1"],
+      },
+    ],
+  }
+);
