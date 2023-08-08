@@ -9,7 +9,6 @@ interface CardProps {
 }
 
 const Card = ({ title, description, imgSrc, href }: CardProps) => {
-  console.log("tilel..", title)
   return (
     <div className="md p-4" style={{ maxWidth: '544px' }}>
       <div
