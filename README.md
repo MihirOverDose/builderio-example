@@ -93,12 +93,3 @@ npm run dev
 4. When you're done, update the preview URL in Builder (in your space settings) to point to your deployment URL
 
 ---
-
-## TODOs, Issues, and Contributing
-
-Please feel free to contribute to this repo!
-
-- [ ] Add fetch example for CMS Data models
-- [ ] Add example on how to use Section models (prob commented out code block on how to use section for home)
-- [ ] Remove `any` in page
-- [ ] Look into loc pricing plan changes

@@ -1,6 +1,6 @@
 import { useRouter } from 'next/router';
 
-export default function LanguageSwitch () {
+export default function LanguageSwitch() {
   const router = useRouter();
   const { pathname, asPath, query, locale } = router;
 
