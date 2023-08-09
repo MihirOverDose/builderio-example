@@ -7,6 +7,7 @@ interface ImgProps {
 }
 
 const ImageViewer = ({ img1, img2 }: ImgProps) => {
+    //comment
     return (
         <div className="grid grid-cols-2 gap-2">
             <img src={img1} alt="" className="rounded-md" />
