@@ -5,7 +5,7 @@ import { builder } from '@builder.io/react';
 if (!process.env.NEXT_PUBLIC_BUILDER_API_KEY) { throw new Error('Missing NEXT_PUBLIC_BUILDER_API_KEY env var') }
 builder.init(process.env.NEXT_PUBLIC_BUILDER_API_KEY);
 
-
+//comment
 interface Product {
     name: string,
     description: string,
