@@ -13,7 +13,7 @@ interface Product {
     specialPrice: string
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
     const productDetails = await builder.get('productdetails', {
         query: {
             // Query product details by its handle field

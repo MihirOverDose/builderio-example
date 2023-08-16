@@ -7,7 +7,7 @@ import ProductDetails from '@/components/ProductDetails';
 
 // Post model created to display a specific blog post.
 // read more at: https://www.builder.io/blog/creating-blog
-export default function Product({ product }) {
+export default function Product({ product }: any) {
     const router = useRouter();
     const isPreviewing = useIsPreviewing();
     if (!router.isFallback && !product && !isPreviewing) {
@@ -46,7 +46,7 @@ export default function Product({ product }) {
     );
 }
 
-export async function getStaticProps({ params }) {
+export async function getStaticProps({ params }: any) {
     const slug = params.slug;
 
     /*
@@ -76,8 +76,12 @@ export async function getStaticPaths() {
     const products = await builder.getAll('product-details-template', {
         options: { noTargeting: true },
     });
+
     return {
-        paths: products?.map(product => `/products/${product.data.slug}`) || [],
+        paths: products?.map(product => {
+            let slugUrl = product.data && product.data.slug || "dummy "
+            return `/products/${slugUrl}`
+        }) || [],
         fallback: true,
     };
 }
