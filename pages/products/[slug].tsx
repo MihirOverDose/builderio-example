@@ -41,19 +41,23 @@ export default function Product({ product }: any) {
     // </>
     return (
         <>
-            {router.isFallback ? (
-                <p>Loading…</p>
-            ) : (
-                <>
-                    <article>
-                        <ProductDetails
-                            product={product}
+            <BuilderContent
+                {...(!isPreviewing && { content: product })}
+                modelName="product-details-template"
+                options={{ includeRefs: true }}
+                isStatic
+            >
+                {(product, loading, fullContent) =>
+                    product && (
+                        <article>
+                            <ProductDetails
+                                product={product}
 
-                        />
-                    </article>
-                </>
-            )
-            }
+                            />
+                        </article>
+                    )
+                }
+            </BuilderContent>
         </>
 
     );
