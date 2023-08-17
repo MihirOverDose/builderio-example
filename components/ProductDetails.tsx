@@ -10,7 +10,7 @@ interface Product {
 function ProductDetails({
     product
 }: any) {
-    const { name, description, basePrice, specialPrice } = product
+    const { name, description, basePrice, specialPrice } = product || {}
     return (
         <>
             <div>Product Image</div>
