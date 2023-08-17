@@ -6,6 +6,8 @@ import Head from 'next/head';
 import type { GetStaticPropsContext } from 'next';
 import "../builder.config"
 import LanguageSwitch from '@/components/LanguageSwitch';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
 
 // Initialize the Builder SDK with your public API key
 if (!process.env.NEXT_PUBLIC_BUILDER_API_KEY) { throw new Error('Missing NEXT_PUBLIC_BUILDER_API_KEY env var') }
