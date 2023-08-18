@@ -3,7 +3,6 @@ import React from "react";
 function Header() {
     return (
         <div
-            $name="Header"
             className="max-w-full w-full items-center flex text-[14px] font-semibold h-full justify-between tracking-[0px] leading-[18px] overflow-hidden mx-0 my-auto px-[15px] max-md:w-full max-md:max-w-none max-md:px-[20px]"
         >
             <div className="flex flex-col w-full">
@@ -19,7 +18,6 @@ function Header() {
                     <input
                         type="text"
                         placeholder="Search"
-                        $name="Search Bar"
                         className="basis-[0%] grow text-[14px] border ml-[15px] mr-0 mt-px pl-[10px] pr-0 py-[10px] rounded-[27px] border-[none] border-solid border-[rgba(179,179,179,1)]"
                     />
                     <ul className="items-center flex list-none relative ml-[20px] max-md:hidden">
