@@ -91,7 +91,9 @@ export default function Page({ page, locale }: any) {
         <LanguageSwitch />
       </nav> */}
       {/* Render the Builder page */}
+      <Header />
       <BuilderComponent model="page" data={{ locale: locale }} content={page} />
+      <Footer />
     </>
   );
 }
